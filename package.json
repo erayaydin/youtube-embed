@@ -4,6 +4,7 @@
   "description": "NodeJS Bootstrap Starter",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,5 +27,8 @@
     "morgan": "^1.5.3",
     "serve-favicon": "^2.2.1",
     "socket.io": "^1.3.5"
+  },
+  "engines": {
+    "node": "0.12.2"
   }
 }
