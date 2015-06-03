@@ -1,0 +1,12 @@
+extends ./layout.jade
+
+block content
+  .well
+    .embed-responsive.embed-responsive-16by9
+      iframe.embed-responsive-item#youtube(height="315", src="", allowfullscreen)
+  form(id="form")
+    .input-group
+      input(class="form-control", type="text", id="code")
+      .input-group-btn
+        input.btn.btn-primary#send(type="submit")
+  br

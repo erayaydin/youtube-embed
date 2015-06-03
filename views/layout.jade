@@ -1,0 +1,21 @@
+include mixins
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    title= title
+
+    link(href="assets/vendor/bootstrap/css/bootstrap.min.css", rel="stylesheet")
+  body
+    +nav("Youtube Embed", "navbar-id")
+      +nav_item("index.html", "active") Home
+    .container
+      .col-md-12
+        block content
+
+    script(src="assets/vendor/jquery/jquery-1.11.3.min.js")
+    script(src="assets/vendor/bootstrap/js/bootstrap.min.js")
+    script(src="/socket.io/socket.io.js")
+    script(src="assets/js/main.js")
